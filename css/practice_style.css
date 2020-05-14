@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100% ;
+}
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    z-index:10;
+    background-color: rgba(246, 239, 219, 0.5);
+    padding: 20px 10px 0 10px;
+}
+#home{
+    background-image: url(../images/main-bg.jpg);
+    min-height: 100vh;
+}
+.header-wrapper{
+    width: 1100px;
+    margin: 0 auto;
+}
+.header-left{
+    width:210px;
+    float:left;
+}
+.nav-list{
+    display: flex;
+    float: right;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+.nav-list li{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-list a{
+    color: #443322;
+}
+.nav-list a:hover{
+    color: #0bd;
+}
+
+.container{
+    max-width: 1100px;
+    padding: 200px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+h1{
+    font-family: 'Philosopher',serif;
+    font-size: 5rem;
+    font-weight:normal;
+    margin: 0;
+    text-align: center;
+}
+.container p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+.button{
+    font-size: 1.375rem;
+    background-color: #0bd;
+    opacity: 0.8;
+    color: #ffffff;
+    padding:15px;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: #0090aa;
+}
+
+/*news*/
+#news{
+    background-image: url(../images/news-bg.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+#news h1, #menu h1{
+    padding-top: 55px;
+}
+.news-contents{
+    display: flex;
+    justify-content: space-between;
+    margin:0 100px 50px 100px;
+}
+article{
+    width: 74%;
+}
+aside{
+    width: 22%;
+}
+.post-title{
+    font-size: 2rem;
+    font-family: "Yu Mincho","YuMincho", serif;
+}
+.post-cat , .post-title{
+    margin-left: 120px;
+}
+.post-date{
+    background-color: #0bd;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 1.625rem;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+.post-date span{
+    display: block;
+    font-size: 1rem;
+    border-top:1px rgba(255, 255,255, .5) solid;
+    padding-top: 6px;
+    width: 60%;
+    margin: 0 auto;
+}
+.post-header{
+    position: relative;
+    margin-bottom: 40px;
+    padding-top: 4px;
+}
+.sub-title{
+    border-bottom: 2px #0bd solid;
+    font-size: 1.375rem;
+    padding-bottom:10px;
+    font-weight: normal;
+}
+.sub-menu{
+    list-style: none;
+    margin-bottom: 60px;
+    padding-left: 0px;
+}
+.sub-menu li{
+    border-bottom: 1px #ddd solid;
+}
+.sub-menu a{
+    color: #432;
+    padding: 10px;
+    display: block;
+}
+.sub-menu a:hover{
+    color: #00bbdd;
+}
+
+/*menu*/
+#menu{
+    background-image: url(../images/menu-bg.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    margin: 6% ;
+    margin-bottom: 50px;
+}
+.menu-container{
+    margin: 100px 200px;
+}
+
+/*contact*/
+#contact{
+    background-image: url(../images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+label{
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    background: rgba(255, 255, 255, .5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    max-width: 240px;
+}
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    display: block;
+    margin: 50px auto;
+    padding: 20px 30px;
+}
+
+/*footer*/
+footer{
+    background-color:#432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color: #ffffff;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 600px){
+    h1,h2{
+        font-size: 2.5rem;
+    }
+    /*header*/
+    .nav-list{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .nav-list li{
+        margin: 0 20px;
+    }
+    /*home*/
+    .container{
+        margin-top: 20%;
+    }
+    .header-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*news*/
+    .news-contents{
+        flex-direction: column;
+    }
+    article,aside{
+        width: 100%;
+    }
+    #news h1{
+        margin-top: 30px;
+    }
+    aside{
+        margin-top: 60px;
+    }
+    .post-header{
+        margin-bottom: 30px;
+    }
+    .post-date{
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-date span{
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .post-title{
+        font-size: 1.375rem;
+    }
+    .post-cat{
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .post-title,.post-cat{
+        margin-left: 80px;
+    }
+}
